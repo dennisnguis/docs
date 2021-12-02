@@ -85,6 +85,8 @@ GitHub | GitHub Refresh Token | github_refresh_token{% endif %}
 {%- ifversion fpt or ghec or ghes > 3.1 or ghae-next %}
 GitHub | GitHub App Installation Access Token | github_app_installation_access_token{% endif %}
 GitHub | GitHub SSH Private Key | github_ssh_private_key
+{%- ifversion fpt or ghec or ghes > 3.3 %}
+GitLab | GitLab Access Token | gitlab_access_token{% endif %}
 GoCardless | GoCardless Live Access Token | gocardless_live_access_token
 GoCardless | GoCardless Sandbox Access Token | gocardless_sandbox_access_token
 {%- ifversion fpt or ghec or ghes > 3.2 %}
@@ -97,6 +99,8 @@ Google | Google Cloud Storage Access Key Secret | google_cloud_storage_access_ke
 Google | Google Cloud Storage Service Account Access Key ID | google_cloud_storage_service_account_access_key_id{% endif %}
 {%- ifversion fpt or ghec or ghes > 3.2 %}
 Google | Google Cloud Storage User Access Key ID | google_cloud_storage_user_access_key_id{% endif %}
+{%- ifversion fpt or ghec or ghes > 3.3 %}
+Google | Google OAuth Access Token | google_oauth_access_token{% endif %}
 {%- ifversion fpt or ghec or ghes > 3.3 %}
 Google | Google OAuth Client ID | google_oauth_client_id{% endif %}
 {%- ifversion fpt or ghec or ghes > 3.3 %}
@@ -205,6 +209,8 @@ Stripe | Stripe Test API Restricted Key | stripe_test_restricted_key{% endif %}
 {%- ifversion fpt or ghec or ghes > 3.1 or ghae-next %}
 Stripe | Stripe Webhook Signing Secret | stripe_webhook_signing_secret{% endif %}
 {%- ifversion fpt or ghec or ghes > 3.1 or ghae-next %}
+{%- ifversion fpt or ghec or ghes > 3.3 %}
+Supabase | Supabase Service Key | supabase_service_key{% endif %}
 Tableau | Tableau Personal Access Token | tableau_personal_access_token{% endif %}
 {%- ifversion fpt or ghec or ghes > 3.1 or ghae-next %}
 Telegram | Telegram Bot Token | telegram_bot_token{% endif %}
